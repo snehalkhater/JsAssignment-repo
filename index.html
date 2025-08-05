@@ -11,9 +11,11 @@
         margin: 0;
         padding: 0;
         background-color: #ADEED9;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        font-family: 'Segoe UI', sans-serif;
     }
 
     .card {
@@ -33,17 +35,27 @@
         font-size: 28px;
         color: #0A4D68;
     }
+
+    .user-input {
+        display: block;
+        width: 100%;
+        margin: 15px auto;
+        padding: 10px 10px;
+        font-size: 18px;
+        border: none;
+        border-radius: 15px;
+    }
 </style>
 
 <body>
     <h2>Find the perimeter</h2>
     <div class="card">
-        <input type="text" placeholder="Enter length of Rectangle">
-        <input type="text" placeholder="Enter breadth of Rectangle">
+        <input type="text" placeholder="Enter length of Rectangle" class="user-input">
+        <input type="text" placeholder="Enter breadth of Rectangle" class="user-input>
 
 
 
-        <button class="btn">Clear</button>
+        <button class=" btn">Clear</button>
         <button class="btn">Calculate</button>
     </div>
 
